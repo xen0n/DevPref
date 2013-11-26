@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>name.xen0n.devpref</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0-dev</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>devpref</artifactId>
+  <name>DevPref</name>
+  <packaging>apk</packaging>
+
+  <dependencies>
+    <!-- Platform -->
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>android</artifactId>
+      <version>${android.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+  <!-- vim:set ai et ts=2 sw=2 sts=2 fenc=utf-8: -->
+</project>
